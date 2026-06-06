@@ -1,0 +1,9 @@
+[bot]
+token = "BOT_TOKEN"
+guild_id = "" # Empty for global commands
+
+[database]
+path = "./data/yumeko.db"
+
+[settings]
+owner_id = "1244295862469918791"

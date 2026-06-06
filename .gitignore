@@ -1,0 +1,8 @@
+tmp/
+data/*.db
+data/*.db-*
+config.toml
+result
+.result
+.direnv/
+.env
