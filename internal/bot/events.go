@@ -41,6 +41,10 @@ func (b *Bot) registerEvents() {
 		b.onMessageDelete(s, m)
 	})
 
+	b.Session.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
+		b.onMessage(s, m)
+	})
+
 	b.Session.AddHandler(func(s *discordgo.Session, m *discordgo.MessageUpdate) {
 		b.onMessageUpdate(s, m)
 	})

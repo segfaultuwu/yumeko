@@ -1,6 +1,7 @@
 [bot]
 token = "BOT_TOKEN"
 guild_id = "" # Empty for global commands
+target = "y%"
 
 [database]
 path = "./data/yumeko.db"

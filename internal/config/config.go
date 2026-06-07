@@ -23,6 +23,10 @@ type Config struct {
 		OwnerID string `toml:"owner_id"`
 	} `toml:"settings"`
 
+	Ai struct {
+		MistralAPIKey string `toml:"mistral_api_key"`
+	}
+
 	Welcome struct {
 		Enabled   bool   `toml:"enabled"`
 		ChannelID string `toml:"channel_id"`

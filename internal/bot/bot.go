@@ -21,7 +21,11 @@ func New(cfg config.Config, db *sql.DB) (*Bot, error) {
 		return nil, err
 	}
 
-	session.Identify.Intents = discordgo.IntentsGuilds | discordgo.IntentsGuildMembers
+	session.Identify.Intents =
+		discordgo.IntentsGuilds |
+			discordgo.IntentsGuildMembers |
+			discordgo.IntentsGuildMessages |
+			discordgo.IntentsMessageContent
 
 	b := &Bot{
 		Session: session,
